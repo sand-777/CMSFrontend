@@ -1,5 +1,8 @@
-
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
 import './App.css'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
 function App() {
@@ -9,11 +12,18 @@ function App() {
 
   return (
     <>
-     <h1 style={{color:"blue"}}>Hello world</h1>
-     <h2>Bye world</h2>
-     <p style={{fontSize: 20}}>Manish</p>
-     <h5>Age: {11+10}</h5>
-     <h2>{name}</h2>
+     <BrowserRouter>
+     <Routes>
+
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      
+      
+
+     </Routes>
+     </BrowserRouter>
+     
     </>
   )
 }
