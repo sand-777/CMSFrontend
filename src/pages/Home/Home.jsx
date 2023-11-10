@@ -1,19 +1,14 @@
 import "./Home.css"
+import Navbar from "../../components/Navbar/Navbar"
+import Button from "../../components/Button/Button"
 
 
 const Home = () => {
   return (
 <>
-<header>
-        <nav>
-            <div className="logo">Digital Pathsala</div>
-            <ul>
-               <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<Navbar/>
+<Button title="Login"/>
 
     <section className="hero">
         <h1>Welcome to Digital Pathsala</h1>

@@ -1,18 +1,12 @@
 import "./Contact.css"
+import Navbar from "../../components/Navbar/Navbar"
+import Button from "../../components/Button/Button"
 
 const Contact = () => {
   return (
     <>
-     <header>
-        <nav>
-            <div className="logo">Digital Pathsala</div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+     
+     <Navbar/>
 
     <section className="contact-page">
         <h1>Contact Us</h1>
@@ -37,7 +31,7 @@ const Contact = () => {
                 <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send Message</button>
+                <Button title="Submit"/>
             </form>
         </div>
     </section>

@@ -1,23 +1,11 @@
+import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
+import Button from "../../components/Button/Button";
 const About = () => {
   return (
     <>
-      <header>
-        <nav>
-          <div className="logo">Digital Pathsala</div>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About Us</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+     <Navbar/>
+     <Button title="Register"/>
 
       <section className="about-page">
         <h1>About Us</h1>
